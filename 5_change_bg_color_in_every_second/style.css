@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+P {
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+button {
+    margin: 1rem;
+    padding: .2rem .8rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+}
