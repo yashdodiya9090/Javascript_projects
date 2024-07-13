@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #48A30012;
+    font-family: "Poppins", sans-serif;
+}
+
+.title {
+    color: #48A300;
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.title span {
+    color: #61481C;
+
+}
+
+.main-container {
+    background-color: #FBFBFB;
+    width: 660px;
+    border-radius: 15px;
+    margin-inline: auto;
+    padding: 25px 40px;
+    margin-bottom: 2rem;
+}
+
+
+.sub-title {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.sub-title .sun {
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    margin-left: 1.5rem;
+
+    animation-name: rotate-sun;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-sun {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.progressbar-title {
+    color: #858585;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding-top: 1.5rem;
+}
+
+.progressbar {
+    width: 100%;
+    height: 30px;
+    background-color: #48A3001A;
+    border-radius: 15px;
+    margin-top: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.progressbar-value {
+    height: 100%;
+    width: 0%;
+    background-color: #48A300;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.completed-task-value {
+    font-size: 10px;
+    margin-left: 15px;
+    font-family: "Poppins", sans-serif;
+    color: #EEFFE0;
+    font-weight: 500;
+}
+
+.error {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: #FF5151;
+    padding-top: 1rem;
+    display: none;
+}
+
+.show-error .error {
+    display: block;
+}
+
+.input-container {
+    height: 82px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border: 1px solid #0000001A;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.input-container .checked {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px solid #61481C4D;
+    margin: 0 1rem;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.completed .checked {
+    background-color: #48A300;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .completed{
+    background-color: #48A300;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.input-content::placeholder {
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #D9D9D9;
+}
+
+.input-content {
+    outline: none;
+    border: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+
+}
+
+.completed .input-content {
+    color: #48A300;
+    text-decoration: line-through;
+}
+
+/* .input-content-completed{
+    color: #48A300;
+    text-decoration: line-through;
+} */
+
+.quote {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.made-by {
+    font-weight: 500;
+    font-size: 10px;
+    color: #858585;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+@media(max-width:700px) {
+    .main-container {
+        padding: 15px 20px;
+    }
+
+    .main-container {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .sub-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .sub-title img {
+        height: 40px;
+        width: 40px;
+        margin-left: 1rem;
+    }
+
+    .progressbar {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .input-container {
+        margin-top: 1.2rem;
+        height: 62px;
+    }
+}

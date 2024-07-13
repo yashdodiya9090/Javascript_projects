@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*roboto*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+
+:root {
+    --black: #050C9C;
+    --dark: #3572EF;
+    --light: #3ABEF9;
+    --white: #A7E6FF;
+}
+
+body {
+    background-color: var(--white)
+}
+
+/* ***************** NavBar ***************** */
+
+nav {
+    height: 45px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+nav .navItems {
+    padding-left: 22px;
+    color: var(--white);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ***************** Container ***************** */
+
+.container {
+    height: 75vh;
+    width: 80vw;
+    margin: 1rem auto;
+    background-color: var(--black);
+    position: relative;
+    border-radius: 10px;
+}
+
+.container img {
+    height: 75vh;
+    width: 80vw;
+    border-radius: 10px;
+}
+
+.songsList {
+    position: absolute;
+    top: 0px;
+    color: black;
+    /* border: solid red 2px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+    margin-left: 3rem;
+}
+
+.song-contain {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-top: 12px;
+
+    /* width: 25rem; */
+}
+
+.song-contain img {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.song-contain span {
+    padding: 0 1rem;
+}
+
+.song-contain i {
+    cursor: pointer;
+}
+
+/* ***************** Play-Pause Song ***************** */
+
+.bottom {
+    height: 73px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    accent-color: var(--white);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* accent-color: #18D860; */
+}
+
+.progressBar {
+    width: 70vw;
+    cursor: pointer;
+}
+
+.song-item-container {
+    display: flex;
+}
+
+.songGif img {
+    height: 20px;
+    position: absolute;
+    left: 13rem;
+
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.songGif span {
+    color: var(--white);
+    position: absolute;
+    left: 18rem;
+    margin-top: 3px;
+}
+
+.bottom i {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.bottom .play-btn {
+    font-size: 1.4rem;
+}

@@ -1,0 +1,26 @@
+.box-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: solid;
+}
+
+.box:nth-child(1) {
+    background-color: green;
+}
+
+.box:nth-child(2) {
+    background-color: yellow;
+}
+
+.box:nth-child(3) {
+    background-color: blue;
+}
+
+.box:nth-child(4) {
+    background-color: orange;
+}
