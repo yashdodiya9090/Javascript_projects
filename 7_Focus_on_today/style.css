@@ -85,14 +85,17 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: width .4s ease-in-out;
 }
 
 .completed-task-value {
-    font-size: 10px;
+    font-size: .8rem;
     margin-left: 15px;
     font-family: "Poppins", sans-serif;
     color: #EEFFE0;
     font-weight: 500;
+    /* height: 1.1em; */
+    min-width: max-content;
 }
 
 .error {
